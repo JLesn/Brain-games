@@ -12,7 +12,7 @@ def game_prime():
         counter += 1
         num = randint(2, 100)
         res = 'yes'
-        for i in range(2, num//2 + 1):
+        for i in range(2, num // 2 + 1):
             if num % i == 0:
                 res = 'no'
         print(f'Question: {num}')
