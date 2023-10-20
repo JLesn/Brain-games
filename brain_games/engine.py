@@ -11,6 +11,7 @@ def run_game(game_name):
     res = game_name.game()
     if res == True:
       print('Correct!')
+      print(f'Congratulations, {name}!')
     if res == False:
       print(f'Let\'s try again, {name}!')
       break
