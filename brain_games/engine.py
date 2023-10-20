@@ -8,7 +8,7 @@ def run_game(game_name):
   counter = 0
   while counter != 3:
     counter += 1
-    res = game()
+    res = game_name()
     if res == True:
       print('Correct!')
     if res == False:
