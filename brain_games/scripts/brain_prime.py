@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+"""Brain-prime game"""
+
+
 from brain_games.games import prime
 from brain_games.engine import run_game
 

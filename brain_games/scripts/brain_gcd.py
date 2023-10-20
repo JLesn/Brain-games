@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+"""Brain-gcd game"""
+
+
 from brain_games.games import gcd
 from brain_games.engine import run_game
 

@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+"""Main brain games module"""
+
+
 from brain_games.cli import welcome_user
 
 
