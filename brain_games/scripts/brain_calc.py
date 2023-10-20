@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Brain-calc game""
+"""Brain-calc game"""
 
 
 from brain_games.engine import run_game
