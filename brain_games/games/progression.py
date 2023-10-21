@@ -17,8 +17,6 @@ def game():
     if hidden == answ:
         return True
     else:
-        print(
-          f'\'{answ}\' is wrong answer ;(.'
-          f' Correct answer was \'{hidden}\'.'
-        )
+        print(f'\'{answ}\' is wrong answer ;(.'
+              f' Correct answer was \'{hidden}\'.')
     return False

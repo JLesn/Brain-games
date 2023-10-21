@@ -14,8 +14,6 @@ def game():
     if qw_operation == answ:
         return True
     else:
-        print(
-          f'\'{answ}\' is wrong answer'
-          f';(. Correct answer was \'{qw_operation}\'.'
-        )
+        print(f'\'{answ}\' is wrong answer'
+              f';(. Correct answer was \'{qw_operation}\'.')
         return False

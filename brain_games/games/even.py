@@ -14,8 +14,6 @@ def game():
     if answ == right:
         return True
     else:
-        print(
-          f'\'{answ}\' is wrong answer ;('
-          f'. Correct answer was \'{right}\'.'
-        )
+        print(f'\'{answ}\' is wrong answer ;('
+              f'. Correct answer was \'{right}\'.')
         return False
