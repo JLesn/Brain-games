@@ -1,8 +1,9 @@
 from random import randint
 
+MESSAGE = 'What number is missing in the progression?'
 
-def game():
-    print('What number is missing in the progression?')
+
+def qw_and_answ():
     step = randint(1, 10)
     position = randint(0, 9)
     stop = randint(0, 100)
@@ -11,12 +12,4 @@ def game():
     hidden = str(lst[position])
     lst[position] = '..'
     given = ' '.join(str(el) for el in lst)
-    print(f'Question: {given}')
-    answ = input()
-    print(f'Your answer: {answ}')
-    if hidden == answ:
-        return True
-    else:
-        print(f'\'{answ}\' is wrong answer ;(.'
-              f' Correct answer was \'{hidden}\'.')
-    return False
+    return given, hidden

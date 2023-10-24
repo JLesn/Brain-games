@@ -1,19 +1,13 @@
 from random import randint
 
+MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-def game():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+
+def qw_and_answ():
     num = randint(0, 100)
-    print(f'Question: {num}')
-    answ = input()
-    print(f'Your answer: {answ}')
+    qw = str(num)
     if (num % 2 == 0):
         right = 'yes'
     else:
         right = 'no'
-    if answ == right:
-        return True
-    else:
-        print(f'\'{answ}\' is wrong answer ;('
-              f'. Correct answer was \'{right}\'.')
-        return False
+    return qw, right

@@ -1,19 +1,18 @@
 from random import randint
 
+MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def game():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    num = randint(2, 100)
-    res = 'yes'
-    for i in range(2, num // 2 + 1):
+
+def is_prime(num):
+    if num == 1:
+        return 'no'
+    for i in range(2, (num // 2 + 1)):
         if num % i == 0:
-            res = 'no'
-    print(f'Question: {num}')
-    answ = input()
-    print(f'Your answer: {answ}')
-    if res == answ:
-        return True
-    else:
-        print(f'\'{answ}\' is wrong answer ;(.'
-              f' Correct answer was \'{res}\'.')
-        return False
+            return 'no'
+    return 'yes'
+
+
+def qw_and_answ():
+    num = randint(2, 100)
+    qw = str(num)
+    return qw, is_prime(num)
