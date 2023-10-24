@@ -9,5 +9,5 @@ def qw_and_answ():
     operations = ["+", "-", "*"]
     rand_operation = operations[randint(0, 2)]
     qw_operation = str(eval(f'{num1} {rand_operation} {num2}'))
-    question = f'{num1}{rand_operation}{num2}'
+    question = f'{num1} {rand_operation} {num2}'
     return question, qw_operation
